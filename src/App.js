@@ -7,6 +7,7 @@ function App() {
   const [data, setData] = useState("");
 
   useEffect(() => {
+    console.log(`${process.env.HELLO}`);
     axios
       .get(
         "https://testnodejsfirebase--playground-105d9.us-central1.hosted.app/api/data"
